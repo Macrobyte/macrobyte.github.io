@@ -1,0 +1,259 @@
+:root {
+  --backgroundDarkGrey: #222222;
+  --backgroundLightGrey: #383838;
+  --hoverColor: #ca4e4e;
+  --textColorWhite: #ffffff;
+}
+
+/* Universal Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Ubuntu', Arial, sans-serif;
+  color: var(--textColorWhite);
+  background-color: var(--backgroundLightGrey);
+}
+
+/* #region Header */
+.header {
+  position: sticky;
+  top: 0;
+  height: 100px;
+  padding: 0; /* Reset padding here */
+  display: flex;
+  justify-content: center; /* center the inner container */
+  align-items: center;
+  z-index: 10;
+  background-color: var(--backgroundDarkGrey);
+  color: var(--textColorWhite);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 32px; /* Add padding to the header content */
+  width: 100%;
+  max-width: 1300px; /* Or whatever max width you want */
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.title {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+}
+
+.header-right svg {
+  display: block;
+  width: 40px;
+  height: 40px;
+  fill: var(--textColorWhite);
+  
+}
+
+.header-right svg:hover {
+  fill: var(--hoverColor);
+  transition: fill 0.3s ease;
+}
+
+/* #endregion */
+
+/* Main content */
+.main-content {
+  max-width: 1300px;  /* Or whatever max width you want */
+  margin: 0 auto;     /* Centers horizontally */
+  padding: 0 1rem; 
+  
+}
+
+/* #region About Section */
+#about {
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+.about-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;      /* Optional: adds horizontal breathing room */
+}
+
+.about-photo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: 100% 0%;
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  flex-shrink: 0; /* Prevents the image from shrinking */
+  align-self: center; /* Centers the image vertically */
+}
+
+.about-text {
+  flex: 1 1 auto;
+  align-self: center;
+  font-weight: 300;
+  font-size: 35px;
+  text-align: justify;
+}
+
+/* #endregion */
+
+/* #region Project Tabs */
+.project-category {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Category headings (e.g., Games, Tools) */
+.project-category h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #ffcc66; /* Highlighted text color */
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.project-category h2::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: #ffcc66;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* #endregion */
+
+/* #region Projects */
+#projects {
+  margin-bottom: 4rem;
+  
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  height: 360px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #1e1e1e;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-family: sans-serif;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.project-image video,
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  /* transparent footer overlay */
+  color: #ccc;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.project-meta svg {
+  vertical-align: middle;
+  fill: #ccc;
+}
+
+.project-meta .sep {
+  color: #777;
+  margin: 0 0.25rem;
+}
+
+.project-description {
+  padding: 0.75rem;
+}
+
+.project-description h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.project-description p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+/* #endregion */
+
+/* #region Footer */
+.footer {
+  background-color: var(--backgroundDarkGrey);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 100px;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+/* #endregion */
