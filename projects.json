@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Minecraft Skin Tool",
+    "description": "This is a tool I'm working on to provide users with a good workflow for creating minecraft skins, with features like file 'watching' to get instant updates from the texture file they are working on.",
+    "video": "./media/mctool.mp4",
+    "duration": "Ongoing",
+    "people": "1",
+    "technologies": "Unity, C#",
+    "link": "",
+    "category": "tools"
+  },
+  {
+    "title": "Parley Smith",
+    "description": "Unity tool to help with the creation of dialogue systems, with a focus on ease of use and flexibility.",
+    "image": "./media/parley-smith.png",
+    "duration": "4 weeks",
+    "people": "1",
+    "technologies": "Unity, C#",
+    "link": "",
+    "category": "tools"
+  },
+  {
+    "title": "Whispers Of Deceit",
+    "description": "Final Major Project for my degree, it's a multiplayer game where players explore a haunted mansion, solve puzzles, and figure out who the traitor is.",
+    "video": "./media/wod.mp4",
+    "duration": "12 weeks",
+    "people": "4",
+    "technologies": "Unreal, C++",
+    "link": "",
+    "category": "games"
+  },
+  {
+    "title": "The Adventures of Sprig and Gizmo",
+    "description": "Split-Screen 3D platformer where players have to solve puzzles and work together to progress through the game.",
+    "video": "./media/sprigzmo.mp4",
+    "duration": "12 weeks",
+    "people": "15",
+    "technologies": "Unreal, C++",
+    "link": "",
+    "category": "games"
+  },
+  {
+    "title": "The Invention of Beebo",
+    "description": "The Invention of Beebo is a Mega Man Clone, in which you play as a robot dog and their trusty drone!",
+    "video": "./media/iob.mp4",
+    "duration": "12 weeks",
+    "people": "14",
+    "technologies": "Unity, C#",
+    "link": "",
+    "category": "games"
+  },
+  {
+    "title": "Untitled Unity Game",
+    "description": "This was my first published game on Itch.io.<br>It's a 2D top down adventure game where you basically just kill a few enemies on the island you are on.",
+    "video": "./media/uug.mp4",
+    "duration": "12 weeks",
+    "people": "1",
+    "technologies": "Unity, C#",
+    "link": "",
+    "category": "games"
+  },
+  {
+    "title": "Spaceshipts N'Rocks",
+    "description": "Simple 2D game where you control a spaceship and try kill enemy ships.",
+    "video": "./media/snr.mp4",
+    "duration": "12 weeks",
+    "people": "1",
+    "technologies": "PS4 Dev Kit, C++",
+    "link": "",
+    "category": "tech"
+  },
+  {
+    "title": "Graphics Programming Project",
+    "description": "In this project I built a pseudo mini game engine using DirectX 11.",
+    "video": "./media/gp.mp4",
+    "duration": "12 weeks",
+    "people": "1",
+    "technologies": "DirectX 11, C++",
+    "link": "",
+    "category": "tech"
+  },
+  {
+    "title": "Collision System Demo",
+    "description": "This project demonstrates a decoupled, modular and abstract collision sub-system made with SDL.",
+    "video": "./media/cs.mp4",
+    "duration": "12 weeks",
+    "people": "1",
+    "technologies": "SDL2, C++",
+    "link": "",
+    "category": "tech"
+  }
+]

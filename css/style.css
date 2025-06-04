@@ -7,15 +7,14 @@
 
 /* Universal Styles */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  
 }
 
 body {
   font-family: 'Ubuntu', Arial, sans-serif;
   color: var(--textColorWhite);
   background-color: var(--backgroundLightGrey);
+  margin: 0;
 }
 
 /* #region Header */
@@ -81,7 +80,7 @@ body {
 
 /* Main content */
 .main-content {
-  max-width: 1300px;  /* Or whatever max width you want */
+  max-width: 1500px;  /* Sets a maximum width for the main content */
   margin: 0 auto;     /* Centers horizontally */
   padding: 0 1rem; 
   
@@ -96,7 +95,9 @@ body {
 .about-container {
   display: flex;
   gap: 2rem;
-  flex-wrap: nowrap;      /* Optional: adds horizontal breathing room */
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .about-photo {
@@ -125,7 +126,6 @@ body {
 .project-category {
   text-align: center;
   margin: 60px auto;
-  max-width: 1200px;
   padding: 0 20px;
 }
 
@@ -166,7 +166,7 @@ body {
 
 .project-card {
   height: 360px;
-  border-radius: 10px;
+  border-radius: 11px;
   overflow: hidden;
   background: #1e1e1e;
   color: #fff;
@@ -182,7 +182,7 @@ body {
 .project-image {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 230px;
   overflow: hidden;
 }
 
@@ -199,7 +199,6 @@ body {
   bottom: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
-  /* transparent footer overlay */
   color: #ccc;
   padding: 0.5rem;
   font-size: 0.85rem;
@@ -209,7 +208,7 @@ body {
 .project-meta {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: l;
   justify-content: center;
   gap: 0.5rem;
   font-size: 0.85rem;
@@ -227,18 +226,22 @@ body {
 }
 
 .project-description {
-  padding: 0.75rem;
+  padding: 1rem;
 }
 
-.project-description h3 {
-  margin: 0 0 0.25rem;
-  font-size: 1.1rem;
-}
-
-.project-description p {
+.project-title {
   margin: 0;
-  font-size: 0.95rem;
-  color: #bbb;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: left;
+  color: #fff;
+}
+
+.project-text {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  text-align: justify;
+  color: #ccc;
 }
 
 /* #endregion */
