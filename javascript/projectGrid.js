@@ -25,7 +25,7 @@ function createProjectCard(project) {
   link.style.textDecoration = "none";
 
   const imageDiv = document.createElement('div');
-  imageDiv.className = 'project-image';
+  imageDiv.className = 'project-media';
 
   if (project.video) {
     const video = document.createElement('video');
@@ -62,9 +62,9 @@ function createProjectCard(project) {
 `;
   imageDiv.appendChild(overlay);
 
-const descriptionDiv = document.createElement('div');
-descriptionDiv.className = 'project-description';
-descriptionDiv.innerHTML = `
+  const descriptionDiv = document.createElement('div');
+  descriptionDiv.className = 'project-description';
+  descriptionDiv.innerHTML = `
   <h3 class="project-title">${project.title}</h3>
   <p class="project-text">${project.description}</p>
 `;

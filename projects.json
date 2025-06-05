@@ -7,7 +7,7 @@
     "people": "1",
     "technologies": "Unity, C#",
     "link": "",
-    "category": "tools"
+    "category": "personal"
   },
   {
     "title": "Parley Smith",
@@ -17,7 +17,7 @@
     "people": "1",
     "technologies": "Unity, C#",
     "link": "",
-    "category": "tools"
+    "category": "personal"
   },
   {
     "title": "Whispers Of Deceit",
@@ -67,7 +67,7 @@
     "people": "1",
     "technologies": "PS4 Dev Kit, C++",
     "link": "",
-    "category": "tech"
+    "category": "personal"
   },
   {
     "title": "Graphics Programming Project",
@@ -77,7 +77,7 @@
     "people": "1",
     "technologies": "DirectX 11, C++",
     "link": "",
-    "category": "tech"
+    "category": "personal"
   },
   {
     "title": "Collision System Demo",
@@ -87,6 +87,6 @@
     "people": "1",
     "technologies": "SDL2, C++",
     "link": "",
-    "category": "tech"
+    "category": "personal"
   }
 ]

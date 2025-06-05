@@ -1,13 +1,18 @@
 :root {
-  --backgroundDarkGrey: #222222;
-  --backgroundLightGrey: #383838;
-  --hoverColor: #ca4e4e;
+  --backgroundDarkGrey: #181818;
+  --backgroundLightGrey: #0c0c0c;
+  --highlightColor: #348cff;
+  --categoryColor: #f8f8f8;
   --textColorWhite: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Universal Styles */
 * {
-  
+  /* border: 1px solid red; */
 }
 
 body {
@@ -22,9 +27,9 @@ body {
   position: sticky;
   top: 0;
   height: 100px;
-  padding: 0; /* Reset padding here */
+  padding: 0;
   display: flex;
-  justify-content: center; /* center the inner container */
+  justify-content: center;
   align-items: center;
   z-index: 10;
   background-color: var(--backgroundDarkGrey);
@@ -37,9 +42,9 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 16px 32px; /* Add padding to the header content */
+  padding: 16px 32px;
   width: 100%;
-  max-width: 1300px; /* Or whatever max width you want */
+  max-width: 1300px;
 }
 
 .header-left {
@@ -50,39 +55,62 @@ body {
 
 .name {
   font-weight: bold;
-  font-size: 3rem;
-}
-
-.title {
-  font-size: 1rem;
-  opacity: 0.7;
+  font-size: 2rem;
 }
 
 .header-right {
+  margin-left: auto;
+}
+
+.header-right ul {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.header-right svg {
-  display: block;
-  width: 40px;
-  height: 40px;
-  fill: var(--textColorWhite);
-  
+.header-right a {
+  position: relative;
+  text-decoration: none; /* remove default underline */
+  font-size: 1.1rem; /* make text a bit bigger */
+  font-weight: 500;
+  color: var(--textColorWhite);
+  transition: color 0.3s ease;
+  padding-bottom: 4px;
 }
 
-.header-right svg:hover {
-  fill: var(--hoverColor);
-  transition: fill 0.3s ease;
+.header-right a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--highlightColor);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
 }
+
+.header-right a:hover::after,
+.header-right a.active::after {
+  transform: scaleX(1); /* show underline */
+}
+
+.header-right a:hover,
+.header-right a.active {
+  color: var(--highlightColor); /* highlight active or hovered */
+}
+
 
 /* #endregion */
 
 /* Main content */
 .main-content {
-  max-width: 1500px;  /* Sets a maximum width for the main content */
-  margin: 0 auto;     /* Centers horizontally */
-  padding: 0 1rem; 
+  max-width: 1500px;
+  margin: 0 auto;  
+  padding: 0 1rem;
   
 }
 
@@ -100,6 +128,27 @@ body {
   max-width: 1200px;
 }
 
+.about-text {
+  flex: 1 1 auto;
+  align-self: center;
+  font-weight: 300;
+  font-size: 35px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-text {
+    font-size: 24px;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
 .about-photo {
   width: 250px;
   height: 250px;
@@ -108,32 +157,26 @@ body {
   border-radius: 10%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
-  flex-shrink: 0; /* Prevents the image from shrinking */
-  align-self: center; /* Centers the image vertically */
+  flex-shrink: 0;
+  align-self: center;
 }
 
-.about-text {
-  flex: 1 1 auto;
-  align-self: center;
-  font-weight: 300;
-  font-size: 35px;
-  text-align: justify;
-}
+
 
 /* #endregion */
 
-/* #region Project Tabs */
+/* #region Project Categories */
 .project-category {
   text-align: center;
   margin: 60px auto;
   padding: 0 20px;
+  scroll-margin-top: 80px;
 }
 
-/* Category headings (e.g., Games, Tools) */
 .project-category h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
-  color: #ffcc66; /* Highlighted text color */
+  color: var(--categoryColor);
   position: relative;
   display: inline-block;
   padding-bottom: 10px;
@@ -144,9 +187,16 @@ body {
   display: block;
   width: 60%;
   height: 3px;
-  background: #ffcc66;
+  background: var(--categoryColor);
   margin: 8px auto 0;
   border-radius: 2px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2rem;
+  justify-content: center;
 }
 
 /* #endregion */
@@ -155,13 +205,6 @@ body {
 #projects {
   margin-bottom: 4rem;
   
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 2rem;
-  justify-content: center;
 }
 
 .project-card {
@@ -179,39 +222,30 @@ body {
   transform: translateY(-5px);
 }
 
-.project-image {
+.project-media {
   position: relative;
   width: 100%;
   height: 230px;
   overflow: hidden;
 }
 
-.project-image video,
-.project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 .project-overlay {
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 30px;
   background: rgba(0, 0, 0, 0.6);
-  color: #ccc;
-  padding: 0.5rem;
-  font-size: 0.85rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
 }
 
 .project-meta {
   display: flex;
-  flex-wrap: wrap;
-  align-items: l;
-  justify-content: center;
   gap: 0.5rem;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: #ccc;
 }
 
@@ -240,7 +274,7 @@ body {
 .project-text {
   margin-top: 0.5rem;
   font-size: 1rem;
-  text-align: justify;
+  text-align: left;
   color: #ccc;
 }
 
@@ -252,11 +286,32 @@ body {
   color: white;
   text-align: center;
   padding: 20px;
-  font-size: 0.9rem;
+  font-size: 1.0rem;
   margin-top: 100px;
 }
 
 .footer p {
   margin: 5px 0;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.footer-social svg {
+  display: block;
+  width: 50px;
+  height: 50px;
+  fill: var(--textColorWhite);
+  
+}
+
+.footer-social svg:hover {
+  fill: var(--highlightColor);
+  transition: fill 0.3s ease;
 }
 /* #endregion */
