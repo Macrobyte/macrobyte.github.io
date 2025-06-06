@@ -27,7 +27,6 @@ body {
   position: sticky;
   top: 0;
   height: 100px;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,32 +36,53 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.header-content{
+.header-content {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 1rem;
+  position: relative;
+}
+
+/* Center nav absolutely within the grid middle column */
+.header {
+  position: sticky;
+  top: 0;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background-color: var(--backgroundDarkGrey);
+  color: var(--textColorWhite);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  padding: 16px 32px;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1500px;
+  padding: 0 3rem;
 }
 
-.header-left {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.name {
+.header-title .name {
   font-weight: bold;
   font-size: 2rem;
 }
 
+/* This wraps nav and contact to stay aligned right */
 .header-right {
-  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
-.header-right ul {
+/* Nav styling */
+.header-nav ul {
   display: flex;
   gap: 2rem;
   list-style: none;
@@ -70,17 +90,17 @@ body {
   padding: 0;
 }
 
-.header-right a {
+.header-nav a {
   position: relative;
-  text-decoration: none; /* remove default underline */
-  font-size: 1.1rem; /* make text a bit bigger */
+  text-decoration: none;
+  font-size: 1.1rem;
   font-weight: 500;
   color: var(--textColorWhite);
   transition: color 0.3s ease;
   padding-bottom: 4px;
 }
 
-.header-right a::after {
+.header-nav a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -93,17 +113,32 @@ body {
   transition: transform 0.3s ease;
 }
 
-.header-right a:hover::after,
-.header-right a.active::after {
-  transform: scaleX(1); /* show underline */
+.header-nav a:hover::after,
+.header-nav a.active::after {
+  transform: scaleX(1);
 }
 
-.header-right a:hover,
-.header-right a.active {
-  color: var(--highlightColor); /* highlight active or hovered */
+.header-nav a:hover,
+.header-nav a.active {
+  color: var(--highlightColor);
 }
 
+/* Contact icons */
+.header-contact {
+  display: flex;
+  gap: 10px;
+}
 
+.header-contact svg {
+  width: 35px;
+  height: 35px;
+  fill: var(--textColorWhite);
+  transition: fill 0.3s ease;
+}
+
+.header-contact svg:hover {
+  fill: var(--highlightColor);
+}
 /* #endregion */
 
 /* Main content */
@@ -199,6 +234,7 @@ body {
   justify-content: center;
 }
 
+
 /* #endregion */
 
 /* #region Projects */
@@ -293,25 +329,56 @@ body {
 .footer p {
   margin: 5px 0;
 }
+/* #endregion */
 
-.footer-social {
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  padding-top: 10px;
+  z-index: 999;
 }
 
-.footer-social svg {
-  display: block;
-  width: 50px;
-  height: 50px;
-  fill: var(--textColorWhite);
-  
+.modal-content {
+  background: #222;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  color: white;
+  position: relative;
 }
 
-.footer-social svg:hover {
-  fill: var(--highlightColor);
-  transition: fill 0.3s ease;
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
 }
-/* #endregion */
+
+.modal-extra-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.modal-extra-link {
+  background: #444;
+  padding: 0.5rem 1rem;
+  color: #eee;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.modal-extra-link:hover {
+  background: #666;
+}

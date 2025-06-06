@@ -1,13 +1,23 @@
 [
   {
     "title": "Minecraft Skin Tool",
-    "description": "This is a tool I'm working on to provide users with a good workflow for creating minecraft skins, with features like file 'watching' to get instant updates from the texture file they are working on.",
+    "description": "This is a tool I'm working on to provide users with a good workflow...",
     "video": "./media/mctool.mp4",
     "duration": "Ongoing",
     "people": "1",
     "technologies": "Unity, C#",
-    "link": "",
-    "category": "personal"
+    "category": "personal",
+
+    "modal": {
+      "detailedDescription": "Here’s a more in-depth explanation of the project...",
+      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "extraLinks": [
+        {
+          "label": "Github Repo",
+          "url": "https://github.com/yourrepo"
+        }
+      ]
+    }
   },
   {
     "title": "Parley Smith",
@@ -16,8 +26,18 @@
     "duration": "4 weeks",
     "people": "1",
     "technologies": "Unity, C#",
-    "link": "",
-    "category": "personal"
+    "category": "personal",
+
+    "modal": {
+      "detailedDescription": "Here’s a more in-depth explanation of the project...",
+      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "extraLinks": [
+        {
+          "label": "Github Repo",
+          "url": "https://github.com/yourrepo"
+        }
+      ]
+    }
   },
   {
     "title": "Whispers Of Deceit",
@@ -26,8 +46,18 @@
     "duration": "12 weeks",
     "people": "4",
     "technologies": "Unreal, C++",
-    "link": "",
-    "category": "games"
+    "category": "games",
+    
+    "modal": {
+      "detailedDescription": "Here’s a more in-depth explanation of the project...",
+      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "extraLinks": [
+        {
+          "label": "Github Repo",
+          "url": "https://github.com/yourrepo"
+        }
+      ]
+    }
   },
   {
     "title": "The Adventures of Sprig and Gizmo",
@@ -36,8 +66,18 @@
     "duration": "12 weeks",
     "people": "15",
     "technologies": "Unreal, C++",
-    "link": "",
-    "category": "games"
+    "category": "games",
+    
+    "modal": {
+      "detailedDescription": "Here’s a more in-depth explanation of the project...",
+      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "extraLinks": [
+        {
+          "label": "Github Repo",
+          "url": "https://github.com/yourrepo"
+        }
+      ]
+    }
   },
   {
     "title": "The Invention of Beebo",
@@ -46,8 +86,18 @@
     "duration": "12 weeks",
     "people": "14",
     "technologies": "Unity, C#",
-    "link": "",
-    "category": "games"
+    "category": "games",
+    
+    "modal": {
+      "detailedDescription": "Here’s a more in-depth explanation of the project...",
+      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "extraLinks": [
+        {
+          "label": "Github Repo",
+          "url": "https://github.com/yourrepo"
+        }
+      ]
+    }
   },
   {
     "title": "Untitled Unity Game",
@@ -56,18 +106,38 @@
     "duration": "12 weeks",
     "people": "1",
     "technologies": "Unity, C#",
-    "link": "",
-    "category": "games"
+    "category": "games",
+    
+    "modal": {
+      "detailedDescription": "Here’s a more in-depth explanation of the project...",
+      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "extraLinks": [
+        {
+          "label": "Github Repo",
+          "url": "https://github.com/yourrepo"
+        }
+      ]
+    }
   },
   {
     "title": "Spaceshipts N'Rocks",
-    "description": "Simple 2D game where you control a spaceship and try kill enemy ships.",
+    "description": "Simple 2D game where you control a spaceship and try to kill enemy ships.",
     "video": "./media/snr.mp4",
     "duration": "12 weeks",
     "people": "1",
     "technologies": "PS4 Dev Kit, C++",
-    "link": "",
-    "category": "personal"
+    "category": "personal",
+    
+    "modal": {
+      "detailedDescription": "Here’s a more in-depth explanation of the project...",
+      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "extraLinks": [
+        {
+          "label": "Github Repo",
+          "url": "https://github.com/yourrepo"
+        }
+      ]
+    }
   },
   {
     "title": "Graphics Programming Project",
@@ -76,8 +146,18 @@
     "duration": "12 weeks",
     "people": "1",
     "technologies": "DirectX 11, C++",
-    "link": "",
-    "category": "personal"
+    "category": "personal",
+    
+    "modal": {
+      "detailedDescription": "Here’s a more in-depth explanation of the project...",
+      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "extraLinks": [
+        {
+          "label": "Github Repo",
+          "url": "https://github.com/yourrepo"
+        }
+      ]
+    }
   },
   {
     "title": "Collision System Demo",
@@ -86,7 +166,97 @@
     "duration": "12 weeks",
     "people": "1",
     "technologies": "SDL2, C++",
-    "link": "",
-    "category": "personal"
+    "category": "personal",
+    
+    "modal": {
+      "detailedDescription": "Here’s a more in-depth explanation of the project...",
+      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "extraLinks": [
+        {
+          "label": "Github Repo",
+          "url": "https://github.com/yourrepo"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Dust and Departure",
+    "description": "Global Game Jam 2025 entry. The theme was bubbles so we made a game where you had a bubble gun that you could use to create bubbles that would jump on.",
+    "image": "./media/dustjam.png",
+    "duration": "48H",
+    "people": "9",
+    "technologies": "Unity, C#",
+    "category": "jams",
+    
+    "modal": {
+      "detailedDescription": "Here’s a more in-depth explanation of the project...",
+      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "extraLinks": [
+        {
+          "label": "Github Repo",
+          "url": "https://github.com/yourrepo"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Jelly Xperiment",
+    "description": "Solent Game Jam 2023 entry. You play as a jelly creature that can expand and contract to solve puzzles and navigate through levels.",
+    "video": "./media/jx.mp4",
+    "duration": "1 week",
+    "people": "",
+    "technologies": "Unity, C#",
+    "category": "jams",
+    
+    "modal": {
+      "detailedDescription": "Here’s a more in-depth explanation of the project...",
+      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "extraLinks": [
+        {
+          "label": "Github Repo",
+          "url": "https://github.com/yourrepo"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Untitled Rage Platformer",
+    "description": "Solent Welcome Week 2024.<br>A 2D platformer where levels were the player had to navigate the levels that were purposely designed to be frustrating and difficult.",
+    "image": "./media/rage.gif",
+    "duration": "1 week",
+    "people": "",
+    "technologies": "Unity, C#",
+    "category": "jams",
+    
+    "modal": {
+      "detailedDescription": "Here’s a more in-depth explanation of the project...",
+      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "extraLinks": [
+        {
+          "label": "Github Repo",
+          "url": "https://github.com/yourrepo"
+        }
+      ]
+    }
+  },
+  {
+    "title": "One Rule",
+    "description": "Unity Game Jam 2022 entry.<br>Basic rythm game themed around the idea of e-waste and recycling.",
+    "image": "./media/onrule.png",
+    "duration": "1 week",
+    "people": "",
+    "technologies": "Unity, C#",
+    "category": "jams",
+    
+    "modal": {
+      "detailedDescription": "Here’s a more in-depth explanation of the project...",
+      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "extraLinks": [
+        {
+          "label": "Github Repo",
+          "url": "https://github.com/yourrepo"
+        }
+      ]
+    }
   }
 ]

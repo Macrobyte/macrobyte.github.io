@@ -20,7 +20,7 @@ const techSVG = `<svg viewBox="0 0 16 16" width="16" height="16" fill="#ccc"><pa
 
 function createProjectCard(project) {
   const link = document.createElement('a');
-  link.href = project.link || '#';
+  link.href = 'javascript:void(0)';
   link.className = "project-card";
   link.style.textDecoration = "none";
 
@@ -72,6 +72,12 @@ function createProjectCard(project) {
   link.appendChild(imageDiv);
   link.appendChild(descriptionDiv);
 
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    openProjectModal(project);
+  });
+
+
   return link;
 }
 
@@ -86,4 +92,58 @@ export async function renderAllProjects() {
       container.appendChild(card);
     }
   });
+}
+
+
+function openProjectModal(project) {
+  const modal = document.getElementById('project-modal');
+  document.getElementById('modal-title').textContent = project.title;
+  
+  // Modal info nested inside project.modal
+  const modalInfo = project.modal || {};
+
+  document.getElementById('modal-detailed-description').textContent = modalInfo.detailedDescription || '';
+
+  const videoContainer = document.getElementById('modal-video-container');
+  videoContainer.innerHTML = ''; // clear previous content
+
+  if (modalInfo.youtube) {
+    const iframe = document.createElement('iframe');
+    iframe.src = modalInfo.youtube;
+    iframe.frameBorder = "0";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    iframe.allowFullscreen = true;
+    videoContainer.appendChild(iframe);
+  } else if (project.video) {
+    const video = document.createElement('video');
+    video.src = project.video;
+    video.controls = true;
+    videoContainer.appendChild(video);
+  }
+
+  // Clear old extra links container if you add one
+  const extraLinksContainer = document.getElementById('modal-extra-links');
+  extraLinksContainer.innerHTML = '';
+  if (modalInfo.extraLinks) {
+    modalInfo.extraLinks.forEach(linkObj => {
+      const a = document.createElement('a');
+      a.href = linkObj.url;
+      a.textContent = linkObj.label;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.className = 'modal-extra-link';
+      extraLinksContainer.appendChild(a);
+    });
+  }
+
+  // Main link shown separately if exists
+  const mainLink = document.getElementById('modal-link');
+  if (project.link) {
+    mainLink.href = project.link;
+    mainLink.style.display = 'inline-block';
+  } else {
+    mainLink.style.display = 'none';
+  }
+
+  modal.style.display = 'flex';
 }
