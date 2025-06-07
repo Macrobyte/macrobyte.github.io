@@ -44,20 +44,6 @@ body {
   position: relative;
 }
 
-/* Center nav absolutely within the grid middle column */
-.header {
-  position: sticky;
-  top: 0;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  background-color: var(--backgroundDarkGrey);
-  color: var(--textColorWhite);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -256,12 +242,6 @@ body {
   transform: translateY(-5px);
 }
 
-.project-card:not(.has-modal) {
-  pointer-events: none;
-  cursor: default;
-  opacity: 0.7; /* optional, visually indicate disabled */
-}
-
 .project-media {
   position: relative;
   width: 100%;
@@ -321,6 +301,10 @@ body {
 .project-meta .ongoing {
   color: #37db3d; /* green */
   font-weight: bold; /* optional, to highlight */
+}
+
+.project-card.clickable {
+  cursor: pointer;
 }
 
 
