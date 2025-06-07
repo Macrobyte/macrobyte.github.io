@@ -1,6 +1,7 @@
 
 import { renderAllProjects } from './projectGrid.js';
 
+
 document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.project-category');
   const navLinks = document.querySelectorAll('.header-nav a');
@@ -30,17 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   updateActiveLink();
   window.addEventListener('scroll', updateActiveLink);
-
-
-  document.getElementById('modal-close').addEventListener('click', () => {
-    document.getElementById('project-modal').style.display = 'none';
-  });
-
-  document.getElementById('project-modal').addEventListener('click', (e) => {
-    if (e.target === e.currentTarget) {
-      e.currentTarget.style.display = 'none';
-    }
-  });
 });
 
 renderAllProjects();

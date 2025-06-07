@@ -123,16 +123,36 @@
   </footer>
 
 
-  <!-- <div id="project-modal" class="modal" style="display:none;">
+  <div id="project-modal" class="modal">
     <div class="modal-content">
       <span id="modal-close" class="modal-close">&times;</span>
+
       <h2 id="modal-title"></h2>
-      <p id="modal-detailed-description"></p>
+
       <div id="modal-video-container"></div>
-      <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" style="display:none;">Visit project</a>
-      <div id="modal-extra-links" class="modal-extra-links"></div>
+
+      <!-- Slideshow wrapper (hidden/shown dynamically) -->
+      <div class="modal-slideshow-wrapper" style="display:none;">
+        <button class="slideshow-arrow left" id="slideshow-left-arrow">‹</button>
+        <div class="modal-slideshow" id="modal-slideshow"></div>
+        <button class="slideshow-arrow right" id="slideshow-right-arrow">›</button>
+      </div>
+
+      <p id="modal-detailed-description"></p>
+
+      <div class="modal-meta">
+        <div id="modal-duration"></div>
+        <div id="modal-team-size"></div>
+      </div>
+
+      <div class="modal-technologies" id="modal-technologies"></div>
+
+      <a href="#" target="_blank" rel="noopener noreferrer" id="modal-link">Project Link</a>
+
+      <div class="modal-extra-links" id="modal-extra-links"></div>
     </div>
-  </div> -->
+  </div>
+
 
 </body>
 

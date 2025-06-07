@@ -1,45 +1,5 @@
 [
   {
-    "title": "Minecraft Skin Tool",
-    "description": "This is a tool I'm working on to provide users with a good workflow...",
-    "video": "./media/mctool.mp4",
-    "duration": "Ongoing",
-    "people": "1",
-    "technologies": "Unity, C#",
-    "category": "personal",
-
-    "modal": {
-      "detailedDescription": "Here’s a more in-depth explanation of the project...",
-      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "extraLinks": [
-        {
-          "label": "Github Repo",
-          "url": "https://github.com/yourrepo"
-        }
-      ]
-    }
-  },
-  {
-    "title": "Parley Smith",
-    "description": "Unity tool to help with the creation of dialogue systems, with a focus on ease of use and flexibility.",
-    "image": "./media/parley-smith.png",
-    "duration": "4 weeks",
-    "people": "1",
-    "technologies": "Unity, C#",
-    "category": "personal",
-
-    "modal": {
-      "detailedDescription": "Here’s a more in-depth explanation of the project...",
-      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "extraLinks": [
-        {
-          "label": "Github Repo",
-          "url": "https://github.com/yourrepo"
-        }
-      ]
-    }
-  },
-  {
     "title": "Whispers Of Deceit",
     "description": "Final Major Project for my degree, it's a multiplayer game where players explore a haunted mansion, solve puzzles, and figure out who the traitor is.",
     "video": "./media/wod.mp4",
@@ -49,12 +9,12 @@
     "category": "games",
     
     "modal": {
-      "detailedDescription": "Here’s a more in-depth explanation of the project...",
-      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "detailedDescription": "This was my first time doing networked multiplayer in Unreal Engine, and it was a great learning experience. The game features a unique 'Haunt' feature where the gameplay would change depending on certain factors and this system would setup the second stage of the game based on a randomly selected 'Haunt'.",
+      "youtube": "https://www.youtube.com/watch?v=SVsaF8JmkLs",
       "extraLinks": [
         {
-          "label": "Github Repo",
-          "url": "https://github.com/yourrepo"
+          "label": "Code Snippets",
+          "url": "https://github.com/Macrobyte/Snippets-Whispers-Of-Deceit"
         }
       ]
     }
@@ -67,17 +27,8 @@
     "people": "15",
     "technologies": "Unreal, C++",
     "category": "games",
-    
-    "modal": {
-      "detailedDescription": "Here’s a more in-depth explanation of the project...",
-      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "extraLinks": [
-        {
-          "label": "Github Repo",
-          "url": "https://github.com/yourrepo"
-        }
-      ]
-    }
+
+    "modal": {}
   },
   {
     "title": "The Invention of Beebo",
@@ -88,16 +39,7 @@
     "technologies": "Unity, C#",
     "category": "games",
     
-    "modal": {
-      "detailedDescription": "Here’s a more in-depth explanation of the project...",
-      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "extraLinks": [
-        {
-          "label": "Github Repo",
-          "url": "https://github.com/yourrepo"
-        }
-      ]
-    }
+    "modal": {}
   },
   {
     "title": "Untitled Unity Game",
@@ -108,16 +50,7 @@
     "technologies": "Unity, C#",
     "category": "games",
     
-    "modal": {
-      "detailedDescription": "Here’s a more in-depth explanation of the project...",
-      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "extraLinks": [
-        {
-          "label": "Github Repo",
-          "url": "https://github.com/yourrepo"
-        }
-      ]
-    }
+    "modal": {}
   },
   {
     "title": "Spaceshipts N'Rocks",
@@ -128,16 +61,7 @@
     "technologies": "PS4 Dev Kit, C++",
     "category": "personal",
     
-    "modal": {
-      "detailedDescription": "Here’s a more in-depth explanation of the project...",
-      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "extraLinks": [
-        {
-          "label": "Github Repo",
-          "url": "https://github.com/yourrepo"
-        }
-      ]
-    }
+    "modal": {}
   },
   {
     "title": "Graphics Programming Project",
@@ -148,16 +72,7 @@
     "technologies": "DirectX 11, C++",
     "category": "personal",
     
-    "modal": {
-      "detailedDescription": "Here’s a more in-depth explanation of the project...",
-      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "extraLinks": [
-        {
-          "label": "Github Repo",
-          "url": "https://github.com/yourrepo"
-        }
-      ]
-    }
+    "modal": {}
   },
   {
     "title": "Collision System Demo",
@@ -168,16 +83,29 @@
     "technologies": "SDL2, C++",
     "category": "personal",
     
-    "modal": {
-      "detailedDescription": "Here’s a more in-depth explanation of the project...",
-      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "extraLinks": [
-        {
-          "label": "Github Repo",
-          "url": "https://github.com/yourrepo"
-        }
-      ]
-    }
+    "modal": {}
+  },
+  {
+    "title": "Minecraft Skin Tool",
+    "description": "This is a tool I'm working on to provide users with a good workflow...",
+    "video": "./media/mctool.mp4",
+    "duration": "Ongoing",
+    "people": "1",
+    "technologies": "Unity, C#",
+    "category": "personal",
+
+    "modal": {}
+  },
+  {
+    "title": "Parley Smith",
+    "description": "Unity tool to help with the creation of dialogue systems, with a focus on ease of use and flexibility.",
+    "image": "./media/parley-smith.png",
+    "duration": "4 weeks",
+    "people": "1",
+    "technologies": "Unity, C#",
+    "category": "personal",
+
+    "modal": {}
   },
   {
     "title": "Dust and Departure",
@@ -188,16 +116,7 @@
     "technologies": "Unity, C#",
     "category": "jams",
     
-    "modal": {
-      "detailedDescription": "Here’s a more in-depth explanation of the project...",
-      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "extraLinks": [
-        {
-          "label": "Github Repo",
-          "url": "https://github.com/yourrepo"
-        }
-      ]
-    }
+    "modal": {}
   },
   {
     "title": "Jelly Xperiment",
@@ -208,16 +127,7 @@
     "technologies": "Unity, C#",
     "category": "jams",
     
-    "modal": {
-      "detailedDescription": "Here’s a more in-depth explanation of the project...",
-      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "extraLinks": [
-        {
-          "label": "Github Repo",
-          "url": "https://github.com/yourrepo"
-        }
-      ]
-    }
+    "modal": {}
   },
   {
     "title": "Untitled Rage Platformer",
@@ -228,16 +138,7 @@
     "technologies": "Unity, C#",
     "category": "jams",
     
-    "modal": {
-      "detailedDescription": "Here’s a more in-depth explanation of the project...",
-      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "extraLinks": [
-        {
-          "label": "Github Repo",
-          "url": "https://github.com/yourrepo"
-        }
-      ]
-    }
+    "modal": {}
   },
   {
     "title": "One Rule",
@@ -248,15 +149,6 @@
     "technologies": "Unity, C#",
     "category": "jams",
     
-    "modal": {
-      "detailedDescription": "Here’s a more in-depth explanation of the project...",
-      "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "extraLinks": [
-        {
-          "label": "Github Repo",
-          "url": "https://github.com/yourrepo"
-        }
-      ]
-    }
+    "modal": {}
   }
 ]
