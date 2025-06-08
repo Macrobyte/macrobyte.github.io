@@ -5,7 +5,7 @@ export function openProjectModal(project) {
 
     // Set title and description
     document.getElementById('modal-title').textContent = project.title;
-    document.getElementById('modal-detailed-description').textContent = modalInfo.detailedDescription || '';
+    document.getElementById('modal-detailed-description').innerHTML = marked.parse(modalInfo.detailedDescription || '');
 
     // Clear media containers
     const videoContainer = document.getElementById('modal-video-container');

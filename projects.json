@@ -5,11 +5,10 @@
     "video": "./media/wod.mp4",
     "duration": "12 weeks",
     "people": "4",
-    "technologies": "Unreal, C++",
+    "technologies": "Unreal, C++, Jenkins, Git",
     "category": "games",
-    
     "modal": {
-      "detailedDescription": "This was my first time doing networked multiplayer in Unreal Engine, and it was a great learning experience. The game features a unique 'Haunt' feature where the gameplay would change depending on certain factors and this system would setup the second stage of the game based on a randomly selected 'Haunt'.",
+      "detailedDescription": "This was my first time doing networked multiplayer programming in Unreal Engine, and it was a great learning experience.\n\nThe game features a unique 'Haunt' feature where the gameplay would change depending on certain factors, and this system would set up the second stage of the game based on a randomly selected 'Haunt'.\n\n**Contributions**\n- Inventory System\n- Combat System\n- Interaction system\n- Custom \"Haunt\" mechanic.\n- Automated builds with Jenkins\n- Network Programming",
       "youtube": "https://www.youtube.com/watch?v=SVsaF8JmkLs",
       "extraLinks": [
         {
@@ -25,10 +24,18 @@
     "video": "./media/sprigzmo.mp4",
     "duration": "12 weeks",
     "people": "15",
-    "technologies": "Unreal, C++",
+    "technologies": "Unreal, C++, Git",
     "category": "games",
-
-    "modal": {}
+    "modal": {
+      "detailedDescription": "My first time working with Unreal Engine and it was a great learning experience.\n\nAt first it was challenging learning all these new systems but I am proud of the work I did and the mechanics I was able to implement.\n\n**Contributions**\n- Object grabbing mechanic that the player used to grab puzzle items to move around.\n- Interaction system for the items and puzzles\n- Built a puzzle manager to track puzzle state.\n- Organized source control and wrote ceremony docs.",
+      "youtube": "https://www.youtube.com/watch?v=qafcOrB1w7I",
+      "extraLinks": [
+        {
+          "label": "Itch.io",
+          "url": "https://tbgamestudio.itch.io/sprig-and-gizmo"
+        }
+      ]
+    }
   },
   {
     "title": "The Invention of Beebo",
@@ -38,8 +45,35 @@
     "people": "14",
     "technologies": "Unity, C#",
     "category": "games",
-    
-    "modal": {}
+    "modal": {
+      "detailedDescription": "This was my first time working with a large team and it taught me a lot about managing a software project and how to work with others.\n\nI was responsible for the implementation of the level mechanics, as well as the player character's movement and abilities.\n\n**Contributions**\n- Level Design\n- Player Character Movement\n- Player Abilities\n- Level Mechanics\n- Organized source control and wrote ceremony docs.",
+      "youtube": "https://www.youtube.com/watch?v=46VDwjGSB84&list=TLGGZWGQGIGFsNAwODA2MjAyNQ",
+      "extraLinks": [
+        {
+          "label": "Itch.io",
+          "url": "https://tbgamestudio.itch.io/theinventionofbeebo"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Knight Game",
+    "description": "A 2D game where you play as a knight and have to defeat enemies and collect items.",
+    "image": "./media/kg.png",
+    "duration": "12 weeks",
+    "people": "1",
+    "technologies": "Unity, C#",
+    "category": "games",
+    "modal": {
+      "detailedDescription": "This was a 2D game project where I explored Unity's particle system and deepened my understanding of core programming concepts. I implemented item pickups, managed player states, and polished the feel of gameplay through visual feedback and effects.\n\n**Contributions**\n- Implemented particle effects for actions and feedback\n- Created a responsive pickup system\n- Gained experience with Unity's event-driven systems\n- Improved understanding of clean code structure and reusability",
+      "youtube": "https://www.youtube.com/watch?v=yXjfopZ26eY",
+      "extraLinks": [
+        {
+          "label": "Itch.io",
+          "url": "https://macrobyte.itch.io/knight-game"
+        }
+      ]
+    }
   },
   {
     "title": "Untitled Unity Game",
@@ -49,7 +83,6 @@
     "people": "1",
     "technologies": "Unity, C#",
     "category": "games",
-    
     "modal": {}
   },
   {
@@ -60,19 +93,30 @@
     "people": "1",
     "technologies": "PS4 Dev Kit, C++",
     "category": "personal",
-    
-    "modal": {}
+    "modal": {
+      "detailedDescription": "This project was an exploration of game development on the PS4 platform. It involved creating a simple 2D game where players control a spaceship and engage in combat with enemy ships.\n\nBecause I had to sign a Sony NDA I am not allowed to show the source code.\n\n**Contributions**\n- Developed a basic game loop and mechanics\n- Implemented player controls and enemy AI\n- Learned about PS4 development environment and constraints",
+      "youtube": "https://www.youtube.com/watch?v=Si29EzYmxas",
+      "extraLinks": []
+
+    }
   },
   {
     "title": "Graphics Programming Project",
-    "description": "In this project I built a pseudo mini game engine using DirectX 11.",
+    "description": "For this project I built a mini game engine using DirectX 11.",
     "video": "./media/gp.mp4",
     "duration": "12 weeks",
     "people": "1",
-    "technologies": "DirectX 11, C++",
+    "technologies": "DirectX 11, C++, HLSL",
     "category": "personal",
-    
-    "modal": {}
+    "modal": {
+      "detailedDescription": "This project was a deep dive into graphics programming, where I implemented a mini game engine using DirectX 11. It involved creating a rendering pipeline, handling shaders, and managing resources efficiently.\n\n**Contributions**\n- Developed a custom rendering pipeline\n- UI system with panels\n- Implemented basic collision detection\n- Created a simple scene management system\n- Learned about DirectX 11's architecture and capabilities",
+      "youtube": "https://www.youtube.com/watch?v=hgxvMsV6CJo&list=TLGG16PimnLjWlUwODA2MjAyNQ",
+      "extraLinks": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Macrobyte/Graphics-Programming"
+        }]
+    }
   },
   {
     "title": "Collision System Demo",
@@ -82,8 +126,16 @@
     "people": "1",
     "technologies": "SDL2, C++",
     "category": "personal",
-    
-    "modal": {}
+    "modal": {
+
+      "detailedDescription": "This project showcases a collision system designed to be modular and decoupled from the main game logic. It allows for easy integration into various game projects and supports multiple collision shapes.\n\n**Contributions**\n- Developed a modular collision system\n- Implemented various collision shapes (AABB, Circle, Polygon)\n- Focused on performance and flexibility",
+      "youtube": "https://www.youtube.com/watch?v=I_4MmdGUP58",
+      "extraLinks": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Macrobyte/Collision-System-Project"
+        }]
+    }
   },
   {
     "title": "Minecraft Skin Tool",
@@ -93,19 +145,15 @@
     "people": "1",
     "technologies": "Unity, C#",
     "category": "personal",
-
-    "modal": {}
-  },
-  {
-    "title": "Parley Smith",
-    "description": "Unity tool to help with the creation of dialogue systems, with a focus on ease of use and flexibility.",
-    "image": "./media/parley-smith.png",
-    "duration": "4 weeks",
-    "people": "1",
-    "technologies": "Unity, C#",
-    "category": "personal",
-
-    "modal": {}
+    "modal": {
+      "detailedDescription": "This tool is designed to streamline the process of creating and editing Minecraft skins. It provides a user-friendly interface for skin manipulation, allowing users to easily customize their characters.\n\n**Contributions**\n- Developed a skin editor with real-time preview\n- Implemented features for importing and exporting skins\n- File watcher system to update skin changes in real-time",
+      "youtube": "https://www.youtube.com/watch?v=8jBubGFNd7E&list=TLGGSijMw_FaYaUwODA2MjAyNQ&t",
+      "extraLinks": [
+        {
+          "label": "Itch.io",
+          "url": "https://macrobyte.itch.io/minecraft-skin-tool"
+        }]
+    }
   },
   {
     "title": "Dust and Departure",
@@ -115,8 +163,20 @@
     "people": "9",
     "technologies": "Unity, C#",
     "category": "jams",
-    
-    "modal": {}
+    "modal": {
+      "detailedDescription": "This game was created for the Global Game Jam 2025 with the theme of 'Bubbles'. The team came together to create a unique platforming experience where players use a bubble gun to create bubbles that serve as platforms to navigate through levels.\n\n**Contributions**\n- Developed the bubble gun mechanics\n- Implemented bubble physics and interactions",
+      "slideshow": [
+        "./media/dustjam1.png",
+        "./media/dustjam2.png",
+        "./media/dustjam3.png"
+      ],
+      "extraLinks": [
+        {
+          "label": "Global Game Jam Page",
+          "url": "https://globalgamejam.org/games/2025/dust-and-departure-8"
+        }
+      ]
+    }
   },
   {
     "title": "Jelly Xperiment",
@@ -126,8 +186,16 @@
     "people": "",
     "technologies": "Unity, C#",
     "category": "jams",
-    
-    "modal": {}
+    "modal": {
+      "detailedDescription": "This game was created for the Solent Game Jam 2023. The concept revolves around a jelly-like creature that can change its size to interact with the environment and solve puzzles.\n\n**Contributions**\n- Main Menu\n- Pause Menu\n- Scene Management system",
+      "youtube": "https://www.youtube.com/watch?v=azNYdapxt7E",
+      "extraLinks": [
+        {
+          "label": "Itch.io",
+          "url": "https://prodigy13.itch.io/jelly-xperiment"
+        }
+      ]
+    }
   },
   {
     "title": "Untitled Rage Platformer",
@@ -137,7 +205,6 @@
     "people": "",
     "technologies": "Unity, C#",
     "category": "jams",
-    
     "modal": {}
   },
   {
@@ -148,7 +215,19 @@
     "people": "",
     "technologies": "Unity, C#",
     "category": "jams",
-    
-    "modal": {}
+    "modal": {
+      "detailedDescription": "This game was created for the Unity Game Jam 2022. The theme was 'One Rule', and we interpreted it as a rhythm game where players must follow a single rule to progress through levels.\n\n**Contributions**\n- UI Programming\n- Scene Management System",
+      "slideshow": [
+        "./media/or1.png",
+        "./media/or2.png",
+        "./media/or3.png"
+      ],
+      "extraLinks": [
+        {
+          "label": "Itch.io",
+          "url": "https://xadegamer.itch.io/one-rule"
+        }
+      ]
+    }
   }
 ]

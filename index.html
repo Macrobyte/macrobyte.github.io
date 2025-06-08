@@ -12,6 +12,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css" />
   <script type="module" src="./javascript/index.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 </head>
 
@@ -29,7 +30,7 @@
 
         <nav class="header-nav">
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#gamesCategory">Games</a></li>
             <li><a href="#personalCategory">Personal Projects</a></li>
             <li><a href="#jamsCategory">Game Jams</a></li>
@@ -81,7 +82,7 @@
 
   </header>
 
-  <main class="main-content">
+  <main class="main-content" id="home">
 
     <section id="about">
       <div class="about-container">
@@ -131,11 +132,22 @@
 
       <div id="modal-video-container"></div>
 
-      <!-- Slideshow wrapper (hidden/shown dynamically) -->
       <div class="modal-slideshow-wrapper" style="display:none;">
-        <button class="slideshow-arrow left" id="slideshow-left-arrow">‹</button>
+        <button class="slideshow-arrow left" id="slideshow-left-arrow">
+          <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7.82842 8.00003L12.4142 3.41424L9.58578 0.585815L2.17157 8.00003L9.58578 15.4142L12.4142 12.5858L7.82842 8.00003Z"
+              fill="#ffffff" />
+          </svg>
+        </button>
         <div class="modal-slideshow" id="modal-slideshow"></div>
-        <button class="slideshow-arrow right" id="slideshow-right-arrow">›</button>
+        <button class="slideshow-arrow right" id="slideshow-right-arrow">
+          <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.1716 8.00003L3.58582 3.41424L6.41424 0.585815L13.8285 8.00003L6.41424 15.4142L3.58582 12.5858L8.1716 8.00003Z"
+              fill="#ffffff" />
+          </svg>
+        </button>
       </div>
 
       <p id="modal-detailed-description"></p>

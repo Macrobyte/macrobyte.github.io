@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.header-nav a');
 
   function updateActiveLink() {
-    let index = -1; // default: no section matched yet
+    let index = -1;
 
     for (let i = 0; i < sections.length; i++) {
       const sectionTop = sections[i].offsetTop - 250;

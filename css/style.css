@@ -10,9 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Universal Styles */
-
-
 body {
   font-family: 'Ubuntu', Arial, sans-serif;
   color: var(--textColorWhite);
@@ -32,16 +29,6 @@ body {
   background-color: var(--backgroundDarkGrey);
   color: var(--textColorWhite);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.header-content {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  width: 100%;
-  max-width: 1500px;
-  padding: 0 1rem;
-  position: relative;
 }
 
 .header-content {
@@ -326,7 +313,7 @@ body {
 }
 /* #endregion */
 
-/* Modal container (hidden by default) */
+/* #region Modal container */
 .modal {
   display: none; /* Controlled via JS */
   position: fixed;
@@ -424,11 +411,16 @@ body {
   border: none;
   color: white;
   font-size: 2rem;
-  padding: 0.4rem 0.8rem;
+  width: 3rem;       /* Consistent width */
+  height: 3rem;      /* Consistent height for a circle */
+  display: flex;     /* Center the icon */
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   cursor: pointer;
   z-index: 1;
-  transition: background 0.2s;
+  transition: background 0.2s ease;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 .slideshow-arrow:hover {
@@ -436,11 +428,11 @@ body {
 }
 
 .slideshow-arrow.left {
-  left: -0.8rem;
+  left: 0.5rem;  /* Adjust for better alignment */
 }
 
 .slideshow-arrow.right {
-  right: -0.8rem;
+  right: 0.5rem;
 }
 
 /* Meta fields */
@@ -509,4 +501,6 @@ body {
   background-color: #555;
   color: #fff;
 }
+
+/* #endregion */
 
