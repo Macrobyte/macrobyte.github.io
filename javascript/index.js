@@ -31,6 +31,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
   updateActiveLink();
   window.addEventListener('scroll', updateActiveLink);
+
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  hamburger.addEventListener('click', (e) => {
+    e.stopPropagation(); // prevent click from bubbling up
+    const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+    hamburger.setAttribute('aria-expanded', !expanded);
+    mobileMenu.classList.toggle('active');
+    mobileMenu.setAttribute('aria-hidden', expanded);
+  });
+
+  // Close the menu if clicking outside of it
+  document.addEventListener('click', (e) => {
+    const isClickInsideMenu = mobileMenu.contains(e.target);
+    const isClickOnHamburger = hamburger.contains(e.target);
+
+    if (!isClickInsideMenu && !isClickOnHamburger) {
+      mobileMenu.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', false);
+      mobileMenu.setAttribute('aria-hidden', true);
+    }
+  });
+
+  const menuLinks = mobileMenu.querySelectorAll('a');
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', false);
+      mobileMenu.setAttribute('aria-hidden', true);
+    });
+  });
+
 });
 
 renderAllProjects();

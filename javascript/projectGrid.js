@@ -2,7 +2,7 @@ import { createProjectCard } from './projectCard.js';
 
 // This script dynamically generates project cards for a portfolio page
 async function fetchProjects() {
-  const res = await fetch('./projects.json');
+  const res = await fetch('./media/projects.json');
   const data = await res.json();
   return data;
 }
