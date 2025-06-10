@@ -81,22 +81,22 @@ export function openProjectModal(project) {
         });
     }
 
-    // Show modal
     modal.style.display = 'flex';
-    document.body.classList.add('modal-open');
+    disableScroll();
 }
 
 // Close modal when clicking the close button
 document.getElementById('modal-close').addEventListener('click', () => {
     document.getElementById('project-modal').style.display = 'none';
-    document.body.classList.remove('modal-open');
+    enableScroll();
+    
 });
 
 // Close modal when clicking outside modal-content (on overlay)
 document.getElementById('project-modal').addEventListener('click', (e) => {
     if (e.target === e.currentTarget) {
         e.currentTarget.style.display = 'none';
-        document.body.classList.remove('modal-open');
+        enableScroll();
     }
 });
 
@@ -139,3 +139,45 @@ function getEmbedFromYoutubeUrl(url) {
     }
     return url;
 }
+
+//#region Scroll Lock/Unlock // TODO - Move somewhere else
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+function preventDefault(e) {
+  e.preventDefault();
+}
+
+function preventDefaultForScrollKeys(e) {
+  if (keys[e.keyCode]) {
+    preventDefault(e);
+    return false;
+  }
+}
+
+// modern Chrome requires { passive: false } when adding event
+var supportsPassive = false;
+try {
+  window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+    get: function () { supportsPassive = true; } 
+  }));
+} catch(e) {}
+
+var wheelOpt = supportsPassive ? { passive: false } : false;
+var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+// call this to Disable
+function disableScroll() {
+  window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+  window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+
+// call this to Enable
+function enableScroll() {
+  window.removeEventListener('DOMMouseScroll', preventDefault, false);
+  window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
+  window.removeEventListener('touchmove', preventDefault, wheelOpt);
+  window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+//#endregion
