@@ -17,6 +17,12 @@ body {
   margin: 0;
 }
 
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
 /* Main content */
 .main-content {
   max-width: 1500px;
@@ -185,9 +191,9 @@ body {
 .mobile-menu nav ul li a:hover,
 .mobile-menu nav ul li a:focus {
   text-decoration: underline;
+  color: var(--highlightColor);
 }
 
-/* Contacts under nav */
 .mobile-contacts {
   display: flex;
   justify-content: center;
@@ -204,10 +210,9 @@ body {
 
 .mobile-contacts a:hover svg,
 .mobile-contacts a:focus svg {
-  fill: #4a90e2; /* Example highlight color */
+  fill: var(--highlightColor);
 }
 
-/* Hide desktop nav and contacts on mobile */
 @media (max-width: 769px) {
   .header-nav,
   .header-contact {
@@ -219,7 +224,6 @@ body {
   }
 }
 
-/* Hide hamburger on desktop */
 @media (min-width: 769px) {
   .hamburger {
     display: none;
@@ -436,7 +440,6 @@ body {
   padding: 1rem;
 }
 
-/* Modal content box */
 .modal-content {
   background-color: #1e1e1e;
   padding: 2rem;
@@ -448,7 +451,6 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Close button */
 .modal-close {
   position: absolute;
   top: 1rem;
@@ -463,11 +465,10 @@ body {
   color: #fff;
 }
 
-/* Media: video or iframe */
 #modal-video-container iframe,
 #modal-video-container video {
   width: 100%;
-  max-width: 720px;  /* increased from 640 */
+  max-width: 720px;
   aspect-ratio: 16 / 9;
   height: auto;
   border-radius: 8px;
@@ -475,33 +476,29 @@ body {
   display: block;
 }
 
-/* Slideshow wrapper */
 .modal-slideshow-wrapper {
   position: relative;
   margin-top: 1rem;
 }
 
-/* Slideshow container */
 .modal-slideshow {
   display: flex;
   gap: 1rem;
   overflow-x: auto;
   padding: 0.5rem 0;
   scroll-behavior: smooth;
-
-  /* Hide scrollbar */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .modal-slideshow::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
 }
 
-/* Slideshow images */
+
 .modal-slideshow img {
   width: 100%;
-  max-width: 720px;  /* increased from 640 */
+  max-width: 720px;
   aspect-ratio: 16 / 9;
   border-radius: 8px;
   object-fit: cover;
@@ -509,7 +506,7 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Slideshow arrow buttons */
+
 .slideshow-arrow {
   position: absolute;
   top: 50%;
@@ -518,9 +515,9 @@ body {
   border: none;
   color: white;
   font-size: 2rem;
-  width: 3rem;       /* Consistent width */
-  height: 3rem;      /* Consistent height for a circle */
-  display: flex;     /* Center the icon */
+  width: 3rem;       
+  height: 3rem;      
+  display: flex;     
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -535,14 +532,13 @@ body {
 }
 
 .slideshow-arrow.left {
-  left: 0.5rem;  /* Adjust for better alignment */
+  left: 0.5rem;
 }
 
 .slideshow-arrow.right {
   right: 0.5rem;
 }
 
-/* Meta fields */
 .modal-meta {
   margin-top: 1rem;
   display: flex;
@@ -552,7 +548,6 @@ body {
   color: #ccc;
 }
 
-/* Technologies list */
 .modal-technologies {
   display: flex;
   flex-wrap: wrap;
@@ -568,7 +563,6 @@ body {
   font-size: 0.8rem;
 }
 
-/* Main link button */
 #modal-link {
   display: inline-block;
   margin-top: 1rem;
@@ -610,9 +604,15 @@ body {
 }
 
 @media (max-width: 769px) {
+  .modal {
+    padding: 0.5rem;
+    max-width: 100%;
+    align-items: center; /* Align to the top */
+  }
+  
   .modal-content {
-    padding: 1rem;
-    border-radius: 8px;
+    padding: 0.5rem;
+    border-radius: 7px;
   }
 
   .modal-slideshow img,
@@ -626,6 +626,10 @@ body {
     height: 2.5rem;
     font-size: 1.5rem;
   }
+
+  *, *::before, *::after {
+  box-sizing: border-box;
+}
 }
 
 /* #endregion */

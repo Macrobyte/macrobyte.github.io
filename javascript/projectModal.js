@@ -83,17 +83,20 @@ export function openProjectModal(project) {
 
     // Show modal
     modal.style.display = 'flex';
+    document.body.classList.add('modal-open');
 }
 
 // Close modal when clicking the close button
 document.getElementById('modal-close').addEventListener('click', () => {
     document.getElementById('project-modal').style.display = 'none';
+    document.body.classList.remove('modal-open');
 });
 
 // Close modal when clicking outside modal-content (on overlay)
 document.getElementById('project-modal').addEventListener('click', (e) => {
     if (e.target === e.currentTarget) {
         e.currentTarget.style.display = 'none';
+        document.body.classList.remove('modal-open');
     }
 });
 
