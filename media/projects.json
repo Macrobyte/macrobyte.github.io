@@ -155,6 +155,25 @@
         }]
     }
   },
+    {
+    "title": "Rot & Roll",
+    "description": "Micro Game Jam 041 entry. Theme was platforms and indirect control.\nHow fast can you roll to the finish line?",
+    "image": "./media/rar.png",
+    "duration": "48H",
+    "people": "3",
+    "technologies": "Unity, C#",
+    "category": "jams",
+    "modal": {
+      "detailedDescription": "You play as a rolling apple and you need to climb up the side of a building to the finish line. \n How fast cant you get there?",
+      "youtube": "https://www.youtube.com/watch?v=jyggzDannqg",
+      "extraLinks": [
+        {
+          "label": "Itch.io",
+          "url": "https://macrobyte.itch.io/rotandroll"
+        }
+      ]
+    }
+  },
   {
     "title": "Dust and Departure",
     "description": "Global Game Jam 2025 entry. The theme was bubbles so we made a game where you had a bubble gun that you could use to create bubbles that would jump on.",
