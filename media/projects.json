@@ -87,7 +87,7 @@
   },
   {
     "title": "Spaceshipts N'Rocks",
-    "description": "Simple 2D game where you control a spaceship and try to kill enemy ships.",
+    "description": "Made in a PS4 Devkit, it's a simple 2D game where you control a spaceship and try to kill enemy ships.",
     "video": "./media/snr.mp4",
     "duration": "12 weeks",
     "people": "1",
@@ -101,12 +101,12 @@
     }
   },
   {
-    "title": "Graphics Programming Project",
-    "description": "For this project I built a mini game engine using DirectX 11.",
+    "title": "DirectX Mini Engine",
+    "description": "Built with DirectX 11, this is a mini game engine that I created to learn more about graphics programming.",
     "video": "./media/gp.mp4",
     "duration": "12 weeks",
     "people": "1",
-    "technologies": "DirectX 11, C++, HLSL",
+    "technologies": "C++, DirectX 11, DirectXTK, HLSL",
     "category": "personal",
     "modal": {
       "detailedDescription": "This project was a deep dive into graphics programming, where I implemented a mini game engine using DirectX 11. It involved creating a rendering pipeline, handling shaders, and managing resources efficiently.\n\n**Contributions**\n- Developed a custom rendering pipeline\n- UI system with panels\n- Implemented basic collision detection\n- Created a simple scene management system\n- Learned about DirectX 11's architecture and capabilities",
@@ -114,7 +114,7 @@
       "extraLinks": [
         {
           "label": "GitHub Repository",
-          "url": "https://github.com/Macrobyte/Graphics-Programming"
+          "url": "https://github.com/Macrobyte/DirectX-Mini-Engine"
         }]
     }
   },
