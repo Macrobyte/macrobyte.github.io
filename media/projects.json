@@ -119,6 +119,24 @@
     }
   },
   {
+    "title": "Minecraft Skin Tool",
+    "description": "This is a tool I'm working on to provide users with a good workflow...",
+    "video": "./media/mctool.mp4",
+    "duration": "Ongoing",
+    "people": "1",
+    "technologies": "Unity, C#",
+    "category": "personal",
+    "modal": {
+      "detailedDescription": "This tool is designed to streamline the process of creating and editing Minecraft skins. It provides a user-friendly interface for skin manipulation, allowing users to easily customize their characters.\n\n**Contributions**\n- Developed a skin editor with real-time preview\n- Implemented features for importing and exporting skins\n- File watcher system to update skin changes in real-time",
+      "youtube": "https://www.youtube.com/watch?v=8jBubGFNd7E&list=TLGGSijMw_FaYaUwODA2MjAyNQ&t",
+      "extraLinks": [
+        {
+          "label": "Itch.io",
+          "url": "https://macrobyte.itch.io/minecraft-skin-tool"
+        }]
+    }
+  },
+    {
     "title": "Collision System Demo",
     "description": "This project demonstrates a decoupled, modular and abstract collision sub-system made with SDL.",
     "video": "./media/cs.mp4",
@@ -138,24 +156,6 @@
     }
   },
   {
-    "title": "Minecraft Skin Tool",
-    "description": "This is a tool I'm working on to provide users with a good workflow...",
-    "video": "./media/mctool.mp4",
-    "duration": "Ongoing",
-    "people": "1",
-    "technologies": "Unity, C#",
-    "category": "personal",
-    "modal": {
-      "detailedDescription": "This tool is designed to streamline the process of creating and editing Minecraft skins. It provides a user-friendly interface for skin manipulation, allowing users to easily customize their characters.\n\n**Contributions**\n- Developed a skin editor with real-time preview\n- Implemented features for importing and exporting skins\n- File watcher system to update skin changes in real-time",
-      "youtube": "https://www.youtube.com/watch?v=8jBubGFNd7E&list=TLGGSijMw_FaYaUwODA2MjAyNQ&t",
-      "extraLinks": [
-        {
-          "label": "Itch.io",
-          "url": "https://macrobyte.itch.io/minecraft-skin-tool"
-        }]
-    }
-  },
-    {
     "title": "Rot & Roll",
     "description": "Micro Game Jam 041 entry. Theme was platforms and indirect control.\nHow fast can you roll to the finish line?",
     "image": "./media/rar.png",
