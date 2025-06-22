@@ -16,7 +16,7 @@ const techSVG = `<svg viewBox="0 0 16 16" width="16" height="16" fill="#ccc"><pa
 export function createProjectCard(project) {
   const link = document.createElement('div');
   link.className = "project-card clickable";
-  link.tabIndex = 0; // makes it focusable if needed
+  link.tabIndex = 0;
 
   const imageDiv = document.createElement('div');
   imageDiv.className = 'project-media';
@@ -45,7 +45,6 @@ export function createProjectCard(project) {
 
   const overlay = document.createElement('div');
   overlay.className = 'project-overlay';
-  // Check if duration is "Ongoing"
 
   const durationClass = project.duration === "Ongoing" ? "ongoing" : "";
 
@@ -76,6 +75,7 @@ export function createProjectCard(project) {
     link.addEventListener('click', (e) => {
       e.preventDefault();
       openProjectModal(project);
+      
     });
   } else {
     link.style.cursor = 'default'; // not clickable look
